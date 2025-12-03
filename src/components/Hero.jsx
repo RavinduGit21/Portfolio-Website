@@ -5,8 +5,7 @@ const smoothScroll = (e, targetId) => {
   e.preventDefault()
   const element = document.getElementById(targetId)
   if (element) {
-    const targetPosition = element.offsetTop - 80
-    window.scrollTarget = targetPosition
+    element.scrollIntoView({ behavior: 'smooth', block: 'start' })
   }
 }
 
@@ -108,7 +107,7 @@ export default function Hero() {
             </svg>
           </a>
           <a
-            href="mailto:ravindushehara1234@gmail.com"
+            href="ravindushehara1234@gmail.com"
             className="w-10 h-10 rounded-lg glass-card flex items-center justify-center hover-lift border border-gray-200"
             aria-label="Email"
             title="Email"
