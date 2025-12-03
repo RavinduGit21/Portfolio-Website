@@ -1,29 +1,26 @@
 import React from 'react'
 import { useScrollAnimation } from '../hooks/useScrollAnimation'
-import ceylonjourneysImg from '../assets/ceylonjourneys.png'
-import gentrycutImg from '../assets/gentrycut.png'
-import westnahiraImg from '../assets/westnahira.png'
 
 const projects = [
   {
     title: 'Ceylon Journeys',
     tech: 'React, TypeScript, Vite, Tailwind CSS, shadcn-ui',
     desc: 'Discover Sri Lanka with a modern SPA showcasing destinations, tours, hotels, and a Plan Your Trip tool',
-    img: ceylonjourneysImg,
+    img: '/ceylonjourneys.png',
     link: 'https://ceylon-journies.vercel.app/'
   },
   {
     title: 'Gentry Cut Saloon',
     tech: 'React, TypeScript, shadcn-ui, Vite',
     desc: 'Modern web application built with React and TypeScript, featuring shadcn-ui components',
-    img: gentrycutImg,
+    img: '/gentrycut.png',
     link: 'https://gentry-cut-saloon.vercel.app/'
   },
   {
     title: 'Westnahira Cellularz',
     tech: 'React, TypeScript, Node.js, Express, MongoDB',
     desc: 'Full-stack e-commerce platform with product management, shopping cart, and secure authentication',
-    img: westnahiraImg,
+    img: '/westnahira.png',
     link: 'https://westnahira-cellularz.vercel.app/'
   }
 ]
