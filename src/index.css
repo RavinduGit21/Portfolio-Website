@@ -187,3 +187,20 @@ body.light-mode .theme-text-muted {
 .theme-text-muted {
   color: #94a3b8;
 }
+
+/* Theme-specific icon visibility */
+body.light-mode .light-mode-icon {
+  display: block;
+}
+
+body.light-mode .dark-mode-icon {
+  display: none;
+}
+
+.light-mode-icon {
+  display: none;
+}
+
+.dark-mode-icon {
+  display: block;
+}

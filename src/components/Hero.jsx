@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import portrait from '../../assets/person.png'
+import AnimatedBackground from './AnimatedBackground'
 
 const smoothScroll = (e, targetId) => {
   e.preventDefault()
@@ -48,7 +49,10 @@ export default function Hero() {
   }, [])
 
   return (
-    <div className="w-full max-w-7xl mx-auto px-6 grid lg:grid-cols-[400px_1fr] gap-8 items-center">
+    <div className="w-full max-w-7xl mx-auto px-6 grid lg:grid-cols-[400px_1fr] gap-8 items-center relative">
+      {/* Animated Background */}
+      <AnimatedBackground />
+      
       {/* Left Sidebar - Glass Card */}
       <div className={`glass-sidebar rounded-3xl p-8 ${isVisible ? 'animate-fade-in-up stagger-1' : ''}`}>
         <div className="flex items-center gap-3 mb-6">
@@ -107,7 +111,7 @@ export default function Hero() {
             </svg>
           </a>
           <a
-            href="ravindushehara1234@gmail.com"
+            href="mailto:ravindushehara1234@gmail.com"
             className="w-10 h-10 rounded-lg glass-card flex items-center justify-center hover-lift border border-gray-200"
             aria-label="Email"
             title="Email"
@@ -151,7 +155,7 @@ export default function Hero() {
         </h1>
 
         <h2 className={`text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-accent-light to-accent bg-clip-text text-transparent ${isVisible ? 'animate-fade-in-up stagger-4' : ''}`}>
-          Backend Developer<br />& API Architect.
+          Full Stack Developer<br />& API Architect.
         </h2>
 
         <div className="flex gap-4 mb-8">

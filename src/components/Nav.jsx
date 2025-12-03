@@ -33,7 +33,7 @@ export default function Nav() {
             {links.map(l => (
               <li key={l.id}>
                 <a 
-                  className="text-gray-300 dark:text-gray-300 light:text-gray-600 hover:text-accent transition-colors text-sm cursor-pointer font-medium"
+                  className="theme-text-secondary hover:text-accent transition-colors text-sm cursor-pointer font-medium"
                   onClick={(e) => smoothScroll(e, l.id)}
                   href={`#${l.id}`}
                 >

@@ -10,73 +10,43 @@ const stats = [
 const tools = [
   { 
     name: 'React',
-    icon: (
-      <svg viewBox="0 0 128 128" className="w-20 h-20">
-        <g fill="#61DAFB"><circle cx="64" cy="64" r="11.4"/><path d="M107.3 45.2c-2.2-.8-4.5-1.6-6.9-2.3.6-2.4 1.1-4.8 1.5-7.1 2.1-13.2-.2-22.5-6.6-26.1-1.9-1.1-4-1.6-6.4-1.6-7 0-15.9 5.2-24.9 13.9-9-8.7-17.9-13.9-24.9-13.9-2.4 0-4.5.5-6.4 1.6-6.4 3.7-8.7 13-6.6 26.1.4 2.3.9 4.7 1.5 7.1-2.4.7-4.7 1.4-6.9 2.3C8.2 50 1.4 56.6 1.4 64s6.9 14 19.3 18.8c2.2.8 4.5 1.6 6.9 2.3-.6 2.4-1.1 4.8-1.5 7.1-2.1 13.2.2 22.5 6.6 26.1 1.9 1.1 4 1.6 6.4 1.6 7.1 0 16-5.2 24.9-13.9 9 8.7 17.9 13.9 24.9 13.9 2.4 0 4.5-.5 6.4-1.6 6.4-3.7 8.7-13 6.6-26.1-.4-2.3-.9-4.7-1.5-7.1 2.4-.7 4.7-1.4 6.9-2.3 12.5-4.8 19.3-11.4 19.3-18.8s-6.8-14-19.3-18.8zM92.5 14.7c4.1 2.4 5.5 9.8 3.8 20.3-.3 2.1-.8 4.3-1.4 6.6-5.2-1.2-10.7-2-16.5-2.5-3.4-4.8-6.9-9.1-10.4-13 7.4-7.3 14.9-12.3 21-12.3 1.3 0 2.5.3 3.5.9zM81.3 74c-1.8 3.2-3.9 6.4-6.1 9.6-3.7.3-7.4.4-11.2.4-3.9 0-7.6-.1-11.2-.4-2.2-3.2-4.2-6.4-6-9.6-1.9-3.3-3.7-6.7-5.3-10 1.6-3.3 3.4-6.7 5.3-10 1.8-3.2 3.9-6.4 6.1-9.6 3.7-.3 7.4-.4 11.2-.4 3.9 0 7.6.1 11.2.4 2.2 3.2 4.2 6.4 6 9.6 1.9 3.3 3.7 6.7 5.3 10-1.7 3.3-3.4 6.6-5.3 10zm8.3-3.3c1.5 3.5 2.7 6.9 3.8 10.3-3.4.8-7 1.4-10.8 1.9 1.2-1.9 2.5-3.9 3.6-6 1.2-2.1 2.3-4.2 3.4-6.2zM64 97.8c-2.4-2.6-4.7-5.4-6.9-8.3 2.3.1 4.6.2 6.9.2 2.3 0 4.6-.1 6.9-.2-2.2 2.9-4.5 5.7-6.9 8.3zm-18.6-15c-3.8-.5-7.4-1.1-10.8-1.9 1.1-3.3 2.3-6.8 3.8-10.3 1.1 2 2.2 4.1 3.4 6.1 1.2 2.2 2.4 4.1 3.6 6.1zm-7-25.5c-1.5-3.5-2.7-6.9-3.8-10.3 3.4-.8 7-1.4 10.8-1.9-1.2 1.9-2.5 3.9-3.6 6-1.2 2.1-2.3 4.2-3.4 6.2zM64 30.2c2.4 2.6 4.7 5.4 6.9 8.3-2.3-.1-4.6-.2-6.9-.2-2.3 0-4.6.1-6.9.2 2.2-2.9 4.5-5.7 6.9-8.3zm22.2 21.8c-1.2-2.1-2.4-4.2-3.6-6.1-1.2-2-2.5-4-3.8-5.9 3.8.5 7.4 1.1 10.8 1.9-1.1 3.3-2.3 6.8-3.8 10.3-1.1-2.1-2.2-4.2-3.4-6.2zM31.7 14.7c1-.6 2.2-.9 3.5-.9 6.1 0 13.6 5.1 21 12.3-3.5 3.8-7 8.2-10.4 13-5.8.5-11.3 1.4-16.5 2.5-.6-2.3-1-4.5-1.4-6.6-1.8-10.5-.3-17.9 3.8-20.3zM10.2 76.1c-7.1-2.6-12.1-7.2-12.1-12.1s5-9.5 12.1-12.1c1.9-.7 4-1.3 6.2-1.9 1.3 4.4 2.9 8.9 4.9 13.6-2 4.7-3.6 9.2-4.9 13.6-2.2-.6-4.3-1.2-6.2-1.9zm6.5 39.6c-4.1-2.4-5.5-9.8-3.8-20.3.3-2.1.8-4.3 1.4-6.6 5.2 1.2 10.7 2 16.5 2.5 3.4 4.8 6.9 9.1 10.4 13-7.4 7.3-14.9 12.3-21 12.3-1.3 0-2.5-.3-3.5-.9zM96.3 93.3c1.7 10.5.3 17.9-3.8 20.3-1 .6-2.2.9-3.5.9-6.1 0-13.6-5.1-21-12.3 3.5-3.8 7-8.2 10.4-13 5.8-.5 11.3-1.4 16.5-2.5.6 2.3 1 4.5 1.4 6.6zm9-15.6c-2 .8-4.2 1.5-6.4 2.1-1.3-4.4-2.9-8.9-4.9-13.6 2-4.7 3.6-9.2 4.9-13.6 2.2.6 4.3 1.3 6.4 2.1 7.1 2.6 12.1 7.2 12.1 12.1s-4.9 9.4-12.1 12z"/></g>
-      </svg>
-    )
+    iconDark: '/icons/React-Dark.svg',
+    iconLight: '/icons/React-Light.svg'
   },
   { 
     name: 'Node.JS',
-    icon: (
-      <svg viewBox="0 0 128 128" className="w-20 h-20">
-        <path fill="#83CD29" d="M112.771 30.334L68.674 4.729c-2.781-1.584-6.402-1.584-9.205 0L14.901 30.334C12.031 31.985 10 35.088 10 38.407v51.142c0 3.319 2.084 6.423 4.954 8.083l11.775 6.688c5.628 2.772 7.617 2.772 10.178 2.772 8.333 0 13.093-5.039 13.093-13.828v-50.49c0-.713-.371-1.774-1.071-1.774h-5.623C42.594 41 41 42.061 41 42.773v50.49c0 3.896-3.524 7.773-10.11 4.48L18.723 90.73c-.424-.23-.723-.693-.723-1.181V38.407c0-.482.555-.966.982-1.213l44.424-25.561c.415-.235 1.025-.235 1.439 0l43.882 25.555c.42.253.272.722.272 1.219v51.142c0 .488.183.963-.232 1.198l-44.086 25.576c-.378.227-.847.227-1.261 0l-11.307-6.749c-.341-.198-.746-.269-1.073-.086-3.146 1.783-3.726 2.02-6.677 3.043-.726.253-1.797.692.41 1.929l14.798 8.754a9.294 9.294 0 004.647 1.246c1.642 0 3.25-.426 4.667-1.246l43.885-25.582c2.87-1.672 4.23-4.764 4.23-8.083V38.407c0-3.319-1.36-6.414-4.229-8.073zM77.91 81.445c-11.726 0-14.309-3.235-15.17-9.066-.1-.628-.633-1.379-1.272-1.379h-5.731c-.709 0-1.279.86-1.279 1.566 0 7.466 4.059 16.512 23.453 16.512 14.039 0 22.088-5.455 22.088-15.109 0-9.572-6.467-12.084-20.082-13.886-13.762-1.819-15.16-2.738-15.16-5.962 0-2.658 1.184-6.203 11.374-6.203 9.105 0 12.461 1.954 13.842 8.091.118.577.645.991 1.24.991h5.754c.354 0 .692-.143.94-.396.24-.272.367-.613.335-.979-.891-10.568-7.912-15.493-22.112-15.493-12.631 0-20.166 5.334-20.166 14.275 0 9.698 7.497 12.378 19.622 13.577 14.505 1.422 15.633 3.542 15.633 6.395 0 4.955-3.978 7.066-13.309 7.066z"/>
-      </svg>
-    )
+    iconDark: '/icons/NodeJS-Dark.svg',
+    iconLight: '/icons/NodeJS-Light.svg'
   },
   { 
     name: '.NET',
-    icon: (
-      <svg viewBox="0 0 128 128" className="w-20 h-20">
-        <path fill="#512BD4" d="M79.55 29.5c-7.73 0-14.02 6.28-14.02 14.02 0 7.73 6.28 14.02 14.02 14.02 7.73 0 14.02-6.28 14.02-14.02 0-7.73-6.28-14.02-14.02-14.02zm0 23.54c-5.27 0-9.52-4.25-9.52-9.52s4.25-9.52 9.52-9.52 9.52 4.25 9.52 9.52-4.25 9.52-9.52 9.52zM48.56 29.87L35.4 57.52h4.78l3.76-8.25h15.7l3.76 8.25h4.78L54.95 29.87h-6.39zm-3.93 15.5l5.99-13.15 5.99 13.15H44.63zM1.91 29.87v27.65h4.5V40.71l18.9 16.81h5.42V29.87h-4.5v16.81L7.33 29.87H1.91zM107.41 34.37v-4.5h-21.88v4.5h8.69v23.15h4.5V34.37h8.69z"/>
-      </svg>
-    )
+    iconDark: '/icons/DotNet.svg',
+    iconLight: '/icons/DotNet.svg'
   },
   { 
     name: 'Php',
-    icon: (
-      <svg viewBox="0 0 128 128" className="w-20 h-20">
-        <path fill="#8892BF" d="M64 1C29.3 1 1 22.7 1 49.2c0 26.5 28.3 48.2 63 48.2s63-21.7 63-48.2C127 22.7 98.7 1 64 1zm0 89.9c-31.5 0-57-18.7-57-41.7S32.5 7.5 64 7.5s57 18.7 57 41.7-25.5 41.7-57 41.7z"/>
-        <path fill="#8892BF" d="M36.3 36.7h-7.6l-5.1 26.6h7.6l1.2-6.2h6c8.3 0 12.8-3.5 14.1-10.5 1.2-6.4-1.7-9.9-9.1-9.9h-7.1zm1.8 9.3h-4.2l1.5-7.8h4.2c3.5 0 4.8 1.2 4.4 3.8-.4 3.1-2.4 4-5.9 4zM81.4 36.7h-7.6l-5.1 26.6h7.6l2-10.3h5c3.4 0 5.2.8 4.9 3.2-.2 1.5-.9 3.9-1.3 5.3-.6 2.3-.4 4-.3 4.8h7.6s-.3-1.7.3-4.8c.5-2.6 1.6-6.6 2-8.9 1-5.7-2.6-8.3-7.7-8.3-3.8 0-6.9 1.2-8.8 3.5l.4-2h-7.6l1.2-6.2h-4.2l-1.4 7.4c0-.1 4.8.3 9.1 3.3zM53.9 46.7c1.3-6.8-2.1-10-9.5-10h-7.6l-5.1 26.6h7.6l1.9-9.8h5.2c5.8 0 6.9 2.4 6.4 5.2-.4 2.2-1.1 4.6-1.1 4.6h7.8s.8-2.7 1.2-5.1c.7-3.8-1.1-7.5-6.8-11.5zM42.5 46h-4.2l1.4-7.3h4.2c3.5 0 4.8 1.2 4.4 3.7-.4 3.1-2.3 3.6-5.8 3.6z"/>
-      </svg>
-    )
+    iconDark: '/icons/PHP-Dark.svg',
+    iconLight: '/icons/PHP-Light.svg'
   },
   { 
     name: 'MySQL',
-    icon: (
-      <svg viewBox="0 0 128 128" className="w-20 h-20">
-        <path fill="#00618A" d="M2.001 90.458h4.108v-16.223l6.36 14.143c.75 1.712 1.5 2.383 3.249 2.383s2.499-.671 3.249-2.383l6.36-14.143v16.223h4.108V74.235c0-2.759-.624-4.039-2.123-4.996-1.5-.956-2.499-1.047-4.373-.047l-6.885 15.24-6.885-15.24c-1.874-1-2.873-.909-4.373.047-1.499.957-2.123 2.237-2.123 4.996v16.223zm27.975 0h4.108V74.235c0-2.759-.624-4.039-2.123-4.996-1.5-.956-2.499-1.047-4.373-.047l-6.885 15.24-6.885-15.24c-1.874-1-2.873-.909-4.373.047-1.499.957-2.123 2.237-2.123 4.996v16.223h4.108V74.235l6.36 14.143c.75 1.712 1.5 2.383 3.249 2.383s2.499-.671 3.249-2.383l6.36-14.143v16.223h.328zm-3.876-27.098c-.624-1.143-1.5-1.763-2.749-1.763-1.248 0-2.124.62-2.748 1.763-.624 1.143-.624 2.527-.624 4.756v2.383c0 2.229 0 3.613.624 4.756.624 1.143 1.5 1.763 2.748 1.763 1.249 0 2.125-.62 2.749-1.763.624-1.143.624-2.527.624-4.756v-2.383c.001-2.229.001-3.613-.624-4.756z"/>
-        <path fill="#E48E00" d="M56.645 90.458h11.373c4.997 0 7.496-2.383 7.496-6.902 0-2.43-1.249-4.047-3.748-5.05 1.875-.908 2.748-2.43 2.748-4.66 0-4.281-2.499-6.421-7.621-6.421H56.645v23.033zm4.108-13.239v-6.278h6.236c2.499 0 3.748.908 3.748 3.139 0 2.23-1.249 3.139-3.748 3.139h-6.236zm0 9.957V80.45h6.885c2.874 0 4.373.909 4.373 3.235 0 2.327-1.499 3.491-4.373 3.491h-6.885zM82.99 60.57c-4.623 0-7.372 2.092-7.372 6.278 0 3.043 1.624 4.947 5.497 6.087l2.374.763c2.874.909 3.748 1.672 3.748 3.043 0 1.672-1.249 2.581-3.373 2.581-2.249 0-3.498-.908-4.248-2.773l-3.623 1.671c1.124 3.093 3.748 4.805 7.996 4.805 4.872 0 7.621-2.235 7.621-6.421 0-3.043-1.624-5.004-5.372-6.144l-2.874-.909c-2.249-.667-3.248-1.431-3.248-2.802 0-1.479 1.125-2.338 3.125-2.338 1.749 0 3.124.621 3.873 2.055l3.498-1.479c-.999-2.714-3.498-4.418-7.622-4.418z"/>
-        <path fill="#00618A" d="M98.717 60.57v17.751c0 5.048 2.748 7.145 8.246 7.145 1.249 0 2.373-.143 3.623-.477V81.41c-.999.334-1.749.477-2.998.477-2.499 0-4.373-.908-4.373-3.235V60.57h-4.498z"/>
-        <path fill="#E48E00" d="M111.24 90.458h4.108v-23.033H111.24v23.033zm0-27.098h4.108V59.26H111.24v4.1z"/>
-      </svg>
-    )
+    iconDark: '/icons/MySQL-Dark.svg',
+    iconLight: '/icons/MySQL-Light.svg'
   },
   { 
     name: 'MongoDB',
-    icon: (
-      <svg viewBox="0 0 128 128" className="w-20 h-20">
-        <path fill="#599636" d="M88.038 42.812c1.605 4.643 2.761 9.383 3.141 14.296.472 6.095.256 12.147-1.029 18.142-.035.165-.109.32-.164.48-.403.001-.814-.049-1.208.012-3.329.523-6.655 1.065-9.981 1.604-3.438.557-6.881 1.092-10.313 1.687-1.216.21-2.721-.041-3.212 1.641-.014.046-.154.054-.235.08l.166-10.051c-.057-8.084-.113-16.168-.169-24.252l1.602-.275c2.62-.429 5.24-.864 7.862-1.281 3.129-.497 6.261-.98 9.392-1.465 1.381-.215 2.764-.412 4.148-.618z"/>
-        <path fill="#6CAC48" d="M88.038 42.812c-1.384.206-2.768.403-4.149.618-3.131.485-6.263.968-9.392 1.465-2.622.417-5.242.852-7.862 1.281l-1.602.275-.012-1.045c-.053-4.905-.104-9.81-.156-14.715-.051-4.905-.102-9.81-.153-14.715-.007-.702-.324-.792-.944-.788-2.58.017-5.16.011-7.74.006-.321 0-.641-.03-.961-.045l-.001-.249c.282-.034.564-.103.848-.105 10.629-.082 21.257-.163 31.886-.244.161-.001.323.012.484.019-.001.077-.003.155-.004.232-.144.031-.287.093-.432.095-1.453.014-2.906.024-4.358.041-.001.302-.005.604-.005.906-.011 2.073-.018 4.147-.034 6.22-.008 1.027-.058 2.051-.059 3.077-.001 4.196 0 8.392-.005 12.588-.002 1.972.012 3.944.02 5.916z"/>
-        <path fill="#C2BFBF" d="M22.984 83.041c1.331 4.097 2.688 8.184 4.012 12.276 1.379 4.26 2.729 8.528 4.093 12.792.054.168.149.326.224.489.001.067-.001.135-.001.202-.384.001-.768.011-1.152.001-.162-.004-.226-.071-.263-.221-.188-.759-.38-1.517-.571-2.276-1.158-4.614-2.315-9.228-3.474-13.842-.06-.238-.125-.475-.187-.712-.012-.044-.024-.088-.036-.132-.101-.365-.207-.728-.301-1.095-.097-.384-.186-.771-.281-1.156-.002-.016-.014-.031-.021-.046-.141-.496-.283-.992-.424-1.488-.021-.004-.04-.014-.061-.012-.124.009-.248.026-.371.026-.458 0-.916-.002-1.374-.005-.039-.001-.079-.015-.118-.023l-.001-.014c.013-.006.025-.015.038-.016.155-.005.31-.006.465-.009 1.633-.02 3.267-.042 4.9-.062.016-.001.032.003.048.004l.001.175c-.145.028-.289.074-.434.079-.38.012-.761.013-1.141.023-.044.001-.088.024-.132.036-.008.034-.019.068-.022.102-.004.046.006.092.009.138z"/>
-      </svg>
-    )
+    iconDark: '/icons/MongoDB.svg',
+    iconLight: '/icons/MongoDB.svg'
   },
   { 
     name: 'Tailwind',
-    icon: (
-      <svg viewBox="0 0 128 128" className="w-20 h-20">
-        <path fill="#38BDF8" d="M64.004 25.602c-17.067 0-27.73 8.53-32 25.597 6.398-8.531 13.867-11.73 22.398-9.597 4.871 1.214 8.352 4.746 12.207 8.66C72.883 56.629 80.145 64 96.004 64c17.066 0 27.73-8.531 32-25.602-6.399 8.536-13.867 11.735-22.399 9.602-4.87-1.215-8.347-4.746-12.207-8.66-6.27-6.367-13.53-13.738-29.394-13.738zM32.004 64c-17.066 0-27.73 8.531-32 25.602C6.402 81.066 13.87 77.867 22.402 80c4.871 1.215 8.352 4.746 12.207 8.66 6.274 6.367 13.536 13.738 29.395 13.738 17.066 0 27.73-8.53 32-25.597-6.399 8.531-13.867 11.73-22.399 9.597-4.87-1.214-8.347-4.746-12.207-8.66C55.128 71.371 47.868 64 32.004 64zm0 0"/>
-      </svg>
-    )
+    iconDark: '/icons/TailwindCSS-Dark.svg',
+    iconLight: '/icons/TailwindCSS-Light.svg'
   },
   { 
     name: 'Notion',
-    icon: (
-      <svg viewBox="0 0 128 128" className="w-20 h-20">
-        <path d="M23.734 20.172c3.094 2.406 4.219 2.094 9.969 1.719l53.75-2.5c1.156 0 .187-1.125-.375-1.5l-8.906-6.437c-1.687-1.313-4-2.781-8.5-2.438l-52 3.938c-1.875.156-2.281.906-1.562 1.531zm3.281 9.438v60.937c0 3.094 1.531 4.219 5 4.031l59.094-3.406c3.469-.188 3.844-2.219 3.844-4.688V25.922c0-2.469-.781-3.844-2.531-3.688l-61.719 3.563c-2.093.156-3.687 1.187-3.687 3.812zm56.406 5.625c.375 1.688 0 3.375-1.687 3.531l-2.813.531v41.25c-2.469 1.313-4.781 2.031-6.656 2.031-3.094 0-3.844-.969-6.125-3.844l-18.75-29.438V78.39l5.875 1.313s0 3.375-4.688 3.375l-12.875.75c-.375-1.688 0-3.375 1.688-3.844l4.375-1.094V49.141l-6.031-.469c-.375-1.688.562-4.125 3.281-4.281l13.844-.969 19.5 29.813V49.766l-5-. 562c-.375-1.687.938-2.906 2.531-3.062zm-73.594-22.5c0-.375.188-.75.563-.969l63.75-37.5c.375-.219.844-.219 1.219 0l63.75 37.5c.375.219.563.563.563.969v75c0 .375-.188.75-.563.969l-63.75 37.5c-.375.219-.844.219-1.219 0l-63.75-37.5c-.375-.219-.563-.563-.563-.969v-75z" fill="#fff"/>
-      </svg>
-    )
+    iconDark: '/icons/Notion-Dark.svg',
+    iconLight: '/icons/Notion-Light.svg'
   }
 ]
 
@@ -85,84 +55,122 @@ export default function About(){
 
   return (
     <div className="w-full" ref={ref}>
-      <div className={`text-center mb-12 ${isVisible ? 'animate-fade-in-up' : 'opacity-0'}`}>
-        <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
+      <div className={`text-center mb-16 ${isVisible ? 'animate-fade-in-up' : 'opacity-0'}`}>
+        <h2 className="text-5xl md:text-6xl font-bold mb-6 theme-text">
           About Me
         </h2>
-        <p className="text-gray-400 max-w-2xl mx-auto">
+        <p className="theme-text-secondary max-w-3xl mx-auto text-lg">
           Get to know more about my journey, expertise, and what drives me
         </p>
       </div>
 
-      <div className="grid md:grid-cols-3 gap-6 mb-10">
+      <div className="grid md:grid-cols-3 gap-8 mb-16">
         {stats.map((s,i)=> (
           <div 
             key={i} 
-            className={`glass-card p-8 rounded-2xl text-center hover-lift ${isVisible ? 'animate-fade-in-up' : 'opacity-0'}`}
+            className={`glass-card p-10 rounded-3xl text-center hover-lift border border-white/5 ${isVisible ? 'animate-fade-in-up' : 'opacity-0'}`}
             style={{ animationDelay: isVisible ? `${0.2 + i * 0.1}s` : '0s' }}
           >
-            <div className="text-5xl font-bold bg-gradient-to-r from-accent-light to-accent bg-clip-text text-transparent mb-2">
+            <div className="text-6xl md:text-7xl font-bold bg-gradient-to-r from-accent-light to-accent bg-clip-text text-transparent mb-4">
               {s.value}
             </div>
-            <div className="text-sm text-gray-400 uppercase tracking-wide">{s.label}</div>
+            <div className="text-base theme-text-secondary uppercase tracking-wider font-medium">{s.label}</div>
           </div>
         ))}
       </div>
 
-      <div className="grid md:grid-cols-2 gap-6">
-        <div className={`glass-card p-8 rounded-2xl ${isVisible ? 'animate-fade-in-up' : 'opacity-0'}`} style={{ animationDelay: '0.5s' }}>
-          <h3 className="font-semibold text-2xl mb-4 bg-gradient-to-r from-accent-light to-white bg-clip-text text-transparent">
+      <div className="grid lg:grid-cols-2 gap-8 mb-16">
+        <div className={`glass-card p-10 rounded-3xl border border-white/5 ${isVisible ? 'animate-fade-in-up' : 'opacity-0'}`} style={{ animationDelay: '0.5s' }}>
+          <h3 className="font-bold text-3xl mb-6 bg-gradient-to-r from-accent-light to-white bg-clip-text text-transparent">
             Mission Statement
           </h3>
-          <p className="text-gray-300 leading-relaxed">
+          <p className="theme-text leading-relaxed text-lg">
             I design reliable, fast, and future-proof architectures focused on observability and maintainability. 
             My goal is to build systems that scale seamlessly and are pleasant to operate, ensuring both 
             performance and developer experience are at their peak.
           </p>
         </div>
 
-        <div className={`glass-card p-8 rounded-2xl ${isVisible ? 'animate-fade-in-up' : 'opacity-0'}`} style={{ animationDelay: '0.6s' }}>
-          <h3 className="font-semibold text-2xl mb-4 bg-gradient-to-r from-accent-light to-white bg-clip-text text-transparent">
+        <div className={`glass-card p-10 rounded-3xl border border-white/5 ${isVisible ? 'animate-fade-in-up' : 'opacity-0'}`} style={{ animationDelay: '0.6s' }}>
+          <h3 className="font-bold text-3xl mb-6 bg-gradient-to-r from-accent-light to-white bg-clip-text text-transparent">
             Contact Details
           </h3>
-          <div className="space-y-3 text-gray-300">
-            <div className="flex items-center gap-3">
-              <span className="text-accent-light">👤</span>
-              <span><strong className="text-white">Name:</strong> Ravindu Shehara</span>
+          <div className="space-y-5">
+            <div className="flex items-center gap-4">
+              <div className="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center flex-shrink-0">
+                <svg className="w-6 h-6 text-accent-light" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                </svg>
+              </div>
+              <div>
+                <div className="text-sm theme-text-muted mb-1">Name</div>
+                <div className="theme-text font-medium">Ravindu Shehara</div>
+              </div>
             </div>
-            <div className="flex items-center gap-3">
-              <span className="text-accent-light">📞</span>
-              <span><strong className="text-white">Phone:</strong> +94 71 451 6364</span>
+            <div className="flex items-center gap-4">
+              <div className="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center flex-shrink-0">
+                <svg className="w-6 h-6 text-accent-light" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                </svg>
+              </div>
+              <div>
+                <div className="text-sm theme-text-muted mb-1">Phone</div>
+                <div className="theme-text font-medium">+94 71 451 6364</div>
+              </div>
             </div>
-            <div className="flex items-center gap-3">
-              <span className="text-accent-light">✉️</span>
-              <span><strong className="text-white">Email:</strong> ravindushehara1234@gmail.com</span>
+            <div className="flex items-center gap-4">
+              <div className="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center flex-shrink-0">
+                <svg className="w-6 h-6 text-accent-light" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
+              </div>
+              <div>
+                <div className="text-sm theme-text-muted mb-1">Email</div>
+                <div className="theme-text font-medium">ravindushehara1234@gmail.com</div>
+              </div>
             </div>
-            <div className="flex items-center gap-3">
-              <span className="text-accent-light">📍</span>
-              <span><strong className="text-white">Location:</strong> Gampaha</span>
+            <div className="flex items-center gap-4">
+              <div className="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center flex-shrink-0">
+                <svg className="w-6 h-6 text-accent-light" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+              </div>
+              <div>
+                <div className="text-sm theme-text-muted mb-1">Location</div>
+                <div className="theme-text font-medium">Gampaha</div>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
       {/* My Favourite Tools Section */}
-      <div className="mt-16">
-        <h2 className={`text-3xl md:text-4xl font-bold mb-12 ${isVisible ? 'animate-fade-in-up' : 'opacity-0'}`} style={{ animationDelay: '0.7s' }}>
+      <div>
+        <h2 className={`text-4xl md:text-5xl font-bold mb-12 theme-text text-center ${isVisible ? 'animate-fade-in-up' : 'opacity-0'}`} style={{ animationDelay: '0.7s' }}>
           My favourite tools
         </h2>
         
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
           {tools.map((tool, i) => (
             <div 
               key={i}
-              className={`glass-card p-6 md:p-8 rounded-2xl flex flex-col items-center justify-center gap-4 hover-lift ${isVisible ? 'animate-fade-in-up' : 'opacity-0'}`}
+              className={`glass-card p-8 rounded-3xl flex flex-col items-center justify-center gap-5 hover-lift border border-white/5 ${isVisible ? 'animate-fade-in-up' : 'opacity-0'}`}
               style={{ animationDelay: isVisible ? `${0.8 + i * 0.1}s` : '0s' }}
             >
               <div className="flex items-center justify-center">
-                {tool.icon}
+                <img 
+                  src={tool.iconLight} 
+                  alt={tool.name} 
+                  className="w-20 h-20 light-mode-icon" 
+                />
+                <img 
+                  src={tool.iconDark} 
+                  alt={tool.name} 
+                  className="w-20 h-20 dark-mode-icon" 
+                />
               </div>
-              <span className="text-white font-medium text-lg">{tool.name}</span>
+              <span className="theme-text font-semibold text-lg">{tool.name}</span>
             </div>
           ))}
         </div>
