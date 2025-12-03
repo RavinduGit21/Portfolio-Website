@@ -1,0 +1,114 @@
+
+# JSON Data for Your Collections
+
+Here is the exact code you need to copy and paste into your MongoDB Atlas collections. This file is for manual backup; the recommended way to populate your database is to use the `npm run seed` command in your backend folder.
+
+**Important:** For each collection, click **"Insert Document"**, then click the **`{}` icon to switch to JSON View**, and then paste the code.
+
+---
+
+### 1. For the `products` collection:
+
+Copy everything below (including the `[` and `]`):
+
+```json
+[
+  { "name": "iPhone 15 Pro", "brand": "Apple", "price": 299997, "imageUrl": "https://picsum.photos/seed/iphone15pro/400/400", "rating": 4.8, "reviews": 125, "category": "Smartphone", "description": "The ultimate iPhone, with the powerful A17 Pro chip, a customizable Action button, and the most powerful iPhone camera system ever." },
+  { "name": "Samsung Galaxy S24 Ultra", "brand": "Samsung", "price": 359997, "imageUrl": "https://picsum.photos/seed/s24ultra/400/400", "rating": 4.9, "reviews": 110, "category": "Smartphone", "description": "Experience the new era of mobile AI with Galaxy S24 Ultra. A new way to create, connect and more. Features a titanium frame and a 200MP camera." },
+  { "name": "Google Pixel 8 Pro", "brand": "Google", "price": 269700, "imageUrl": "https://picsum.photos/seed/pixel8pro/400/400", "rating": 4.7, "reviews": 95, "category": "Smartphone", "description": "The Pixel 8 Pro is the most powerful, personal, and secure Pixel phone yet, with a pro-level camera system and the Google Tensor G3 chip." },
+  { "name": "Anker PowerCore 10000", "brand": "Anker", "price": 14997, "imageUrl": "https://picsum.photos/seed/ankerpower/400/400", "rating": 4.9, "reviews": 540, "category": "Power Bank", "description": "One of the smallest and lightest 10,000mAh portable chargers. Provides almost three-and-a-half iPhone 8 charges or two-and-a-half Galaxy S8 charges." },
+  { "name": "Ugreen 65W GaN Charger", "brand": "Ugreen", "price": 11997, "imageUrl": "https://picsum.photos/seed/ugreen/400/400", "rating": 4.8, "reviews": 210, "category": "Charger", "description": "Take your charging to the next level with this 65W GaN charger. Charge up to 4 devices simultaneously with 3 USB-C ports and 1 USB-A port." },
+  { "name": "Versus Crystal Case for iPhone 15", "brand": "Versus", "price": 5997, "imageUrl": "https://picsum.photos/seed/versuscase/400/400", "rating": 4.5, "reviews": 150, "category": "Case", "description": "Showcase the original beauty of your phone with this crystal clear case. Features military-grade drop protection and long-lasting clarity." },
+  { "name": "OnePlus 12", "brand": "OnePlus", "price": 239700, "imageUrl": "https://picsum.photos/seed/oneplus12/400/400", "rating": 4.7, "reviews": 88, "category": "Smartphone", "description": "The OnePlus 12 is effortlessly fast and smooth. Powered by the Snapdragon 8 Gen 3 with a stunning 2K 120Hz Super Fluid AMOLED display." },
+  { "name": "Sony WF-1000XM5 Earbuds", "brand": "Sony", "price": 89997, "imageUrl": "https://picsum.photos/seed/sonyxm5/400/400", "rating": 4.8, "reviews": 350, "category": "Headphones", "description": "The best noise canceling earbuds are now even better. The WF-1000XM5 features the best noise canceling technology and astonishing sound quality." },
+  { "name": "Spigen Tough Armor Case for S24", "brand": "Spigen", "price": 10497, "imageUrl": "https://picsum.photos/seed/spigencase/400/400", "rating": 4.7, "reviews": 800, "category": "Case", "description": "Absolute protection with dual layers and Air Cushion Technology. The Tough Armor case is a fan favorite and a best-seller for a reason." },
+  { "name": "Xiaomi 14 Ultra", "brand": "Xiaomi", "price": 389700, "imageUrl": "https://picsum.photos/seed/xiaomi14/400/400", "rating": 4.8, "reviews": 75, "category": "Smartphone", "description": "Co-engineered with Leica, the Xiaomi 14 Ultra brings professional-grade optics to your pocket with its quad camera system and 1-inch main sensor." },
+  { "name": "Belkin BoostCharge Pro 100W", "brand": "Belkin", "price": 26997, "imageUrl": "https://picsum.photos/seed/belkin100w/400/400", "rating": 4.6, "reviews": 180, "category": "Charger", "description": "Charge your MacBook Pro at full speed or fast charge an iPhone and iPad while charging two additional devices at the same time with our 108W 4-Port GaN Charger." },
+  { "name": "Bose QuietComfort Ultra Headphones", "brand": "Bose", "price": 128700, "imageUrl": "https://picsum.photos/seed/boseqc/400/400", "rating": 4.9, "reviews": 410, "category": "Headphones", "description": "World-class noise cancellation, now with Immersive Audio. The Bose QuietComfort Ultra Headphones provide a truly immersive listening experience." },
+  { "name": "Asus ROG Phone 8", "brand": "Asus", "price": 329997, "imageUrl": "https://picsum.photos/seed/rog8/400/400", "rating": 4.9, "reviews": 65, "category": "Smartphone", "description": "The ultimate gaming phone, perfected. The ROG Phone 8 packs the latest Snapdragon 8 Gen 3, an advanced cooling system, and AirTrigger controls." },
+  { "name": "Zagg InvisibleShield Screen Protector", "brand": "Zagg", "price": 13497, "imageUrl": "https://picsum.photos/seed/zaggshield/400/400", "rating": 4.5, "reviews": 1200, "category": "Screen Protector", "description": "Get the most advanced screen protection available. InvisibleShield features military-grade components that provide unbeatable impact and scratch protection." },
+  { "name": "Samsung Galaxy Watch 6", "brand": "Samsung", "price": 89997, "imageUrl": "https://picsum.photos/seed/watch6/400/400", "rating": 4.6, "reviews": 280, "category": "Smartwatch", "description": "Start your everyday wellness journey with the new Galaxy Watch6. It features a larger display, personalized heart rate zones, and advanced sleep coaching." },
+  { "name": "Nothing Phone (2)", "brand": "Nothing", "price": 179700, "imageUrl": "https://picsum.photos/seed/nothing2/400/400", "rating": 4.6, "reviews": 130, "category": "Smartphone", "description": "The Nothing Phone (2) features the iconic Glyph Interface, a premium dual camera system, and the powerful Nothing OS 2.0 for a fast, smooth experience." },
+  { "name": "Otterbox Defender Case for Pixel 8", "brand": "Otterbox", "price": 14985, "imageUrl": "https://picsum.photos/seed/otterbox/400/400", "rating": 4.8, "reviews": 1500, "category": "Case", "description": "The legendary Defender Series case offers multi-layer protection, port covers to keep out dust and debris, and a holster that doubles as a kickstand." },
+  { "name": "Google Pixel Watch 2", "brand": "Google", "price": 104997, "imageUrl": "https://picsum.photos/seed/pixelwatch2/400/400", "rating": 4.5, "reviews": 190, "category": "Smartwatch", "description": "Get help from Google and Fitbit on your wrist. The Pixel Watch 2 combines the best of both worlds with a beautiful design and advanced health tracking." },
+  { "name": "Sony Xperia 1 V", "brand": "Sony", "price": 419997, "imageUrl": "https://picsum.photos/seed/xperia1v/400/400", "rating": 4.7, "reviews": 55, "category": "Smartphone", "description": "The Xperia 1 V is the first smartphone equipped with a newly developed stacked CMOS image sensor with 2-Layer Transistor Pixel for pro-level photography." },
+  { "name": "iOttie Easy One Touch 5 Car Mount", "brand": "iOttie", "price": 7485, "imageUrl": "https://picsum.photos/seed/iottie5/400/400", "rating": 4.7, "reviews": 2500, "category": "Car Accessory", "description": "The Easy One Touch 5 is the next generation of the top car mount in the U.S. Featuring the patented Easy One Touch mechanism, you can lock and release smartphones in seconds." },
+  { "name": "Satechi 165W GaN Charger", "brand": "Satechi", "price": 35997, "imageUrl": "https://picsum.photos/seed/satechi165/400/400", "rating": 4.8, "reviews": 135, "category": "Charger", "description": "Power up to four devices at once with the Satechi 165W GaN Charger. Features four USB-C PD ports that automatically adjust to provide the fastest possible charge." },
+  { "name": "Oppo Find X7 Ultra", "brand": "Oppo", "price": 345000, "imageUrl": "https://picsum.photos/seed/oppox7/400/400", "rating": 4.8, "reviews": 45, "category": "Smartphone", "description": "The Oppo Find X7 Ultra revolutionizes mobile photography with its dual-periscope camera system and a 1-inch Hasselblad main camera." },
+  { "name": "Mous Limitless 5.0 Case", "brand": "Mous", "price": 17997, "imageUrl": "https://picsum.photos/seed/mouscase/400/400", "rating": 4.9, "reviews": 600, "category": "Case", "description": "The Limitless 5.0 case offers extreme protection, MagSafe compatibility, and a range of stylish real material backplates. Uniting style and substance." },
+  { "name": "Zendure SuperTank Pro", "brand": "Zendure", "price": 68997, "imageUrl": "https://picsum.photos/seed/zendure/400/400", "rating": 4.7, "reviews": 90, "category": "Power Bank", "description": "The SuperTank Pro is a high-capacity 26,800mAh power bank with four USB-C ports, capable of delivering a total of 138W to power laptops, tablets, and phones." },
+  { "name": "Nomad Kevlar USB-C Cable", "brand": "Nomad", "price": 11985, "imageUrl": "https://picsum.photos/seed/nomadcable/400/400", "rating": 4.9, "reviews": 310, "category": "Cable", "description": "Built with a double-braided Kevlar outer sheath and strong metal alloy connector housings, this cable has been engineered for extreme durability and heavy everyday use." },
+  { "name": "Spigen Glas.tR Screen Protector", "brand": "Spigen", "price": 4797, "imageUrl": "https://picsum.photos/seed/spigenscreen/400/400", "rating": 4.6, "reviews": 3000, "category": "Screen Protector", "description": "Tempered glass durability rated at 9H hardness. Includes an innovative, auto-alignment installation kit for effortless application." }
+]
+```
+
+---
+
+### 2. For the `categories` collection:
+
+Copy everything below (including the `[` and `]`):
+
+```json
+[
+    { "name": "Smartphones", "imageUrl": "https://picsum.photos/seed/smartphones/600/600" },
+    { "name": "Chargers", "imageUrl": "https://picsum.photos/seed/chargers/600/600" },
+    { "name": "Phone Cases", "imageUrl": "https://picsum.photos/seed/cases/600/600" },
+    { "name": "Accessories", "imageUrl": "https://picsum.photos/seed/accessories-cat/600/600" }
+]
+```
+
+---
+
+### 3. For the `reviews` collection:
+
+Copy everything below (including the `[` and `]`):
+
+```json
+[
+    { "id": 1, "name": "John D.", "rating": 5, "text": "Incredible service and fast shipping! My new phone arrived in perfect condition. Will definitely shop here again." },
+    { "id": 2, "name": "Jane S.", "rating": 5, "text": "The website is so easy to use, and I found the exact accessory I was looking for at a great price. Highly recommended!" },
+    { "id": 3, "name": "Mike L.", "rating": 4, "text": "Great selection of products. My only wish is for more color options on the cases, but overall a very positive experience." }
+]
+```
+
+---
+
+### 4. For the `brands` collection:
+
+**This one is different.** Copy the single object below (including the `{` and `}`):
+
+```json
+{
+    "names": ["Versus", "Ugreen", "Anker", "Samsung", "Apple", "Google", "OnePlus", "Sony", "Spigen", "Xiaomi", "Belkin", "Bose", "Asus", "Zagg", "Nothing", "Otterbox", "iOttie", "Satechi", "Oppo", "Mous", "Zendure", "Nomad"]
+}
+```
+
+---
+
+### 5. For the `megaMenuCategories` collection:
+
+Copy everything below (including the `[` and `]`):
+
+```json
+[
+    {
+      "title": "Main Categories",
+      "links": [
+        { "name": "Smartphones", "href": "/category/Smartphone" },
+        { "name": "Smartwatches", "href": "/category/Smartwatch" },
+        { "name": "Earphones & Headphones", "href": "/category/Headphones" },
+        { "name": "Power Banks", "href": "/category/Power Bank" }
+      ]
+    },
+    {
+      "title": "Accessories",
+      "links": [
+        { "name": "Cases & Covers", "href": "/category/Case" },
+        { "name": "Chargers", "href": "/category/Charger" },
+        { "name": "Cables", "href": "/category/Cable" },
+        { "name": "Screen Protectors", "href": "/category/Screen Protector" },
+        { "name": "Car Accessories", "href": "/category/Car Accessory" }
+      ]
+    }
+]
+```
