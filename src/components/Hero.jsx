@@ -167,7 +167,7 @@ export default function Hero() {
             My Works 🎨
           </a>
           <a
-            href="/assets/resume.pdf"
+            href={import.meta.env.BASE_URL + 'resume.pdf'}
             download
             className="px-8 py-3 rounded-full border border-gray-300 dark:border-white/20 glass-card font-medium hover-lift inline-flex items-center gap-2 theme-text-secondary"
           >
