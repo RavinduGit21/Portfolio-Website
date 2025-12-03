@@ -10,43 +10,43 @@ const stats = [
 const tools = [
   { 
     name: 'React',
-    iconDark: '/icons/React-Dark.svg',
-    iconLight: '/icons/React-Light.svg'
+    iconDark: import.meta.env.BASE_URL + 'icons/React-Dark.svg',
+    iconLight: import.meta.env.BASE_URL + 'icons/React-Light.svg'
   },
   { 
     name: 'Node.JS',
-    iconDark: '/icons/NodeJS-Dark.svg',
-    iconLight: '/icons/NodeJS-Light.svg'
+    iconDark: import.meta.env.BASE_URL + 'icons/NodeJS-Dark.svg',
+    iconLight: import.meta.env.BASE_URL + 'icons/NodeJS-Light.svg'
   },
   { 
     name: '.NET',
-    iconDark: '/icons/DotNet.svg',
-    iconLight: '/icons/DotNet.svg'
+    iconDark: import.meta.env.BASE_URL + 'icons/DotNet.svg',
+    iconLight: import.meta.env.BASE_URL + 'icons/DotNet.svg'
   },
   { 
     name: 'Php',
-    iconDark: '/icons/PHP-Dark.svg',
-    iconLight: '/icons/PHP-Light.svg'
+    iconDark: import.meta.env.BASE_URL + 'icons/PHP-Dark.svg',
+    iconLight: import.meta.env.BASE_URL + 'icons/PHP-Light.svg'
   },
   { 
     name: 'MySQL',
-    iconDark: '/icons/MySQL-Dark.svg',
-    iconLight: '/icons/MySQL-Light.svg'
+    iconDark: import.meta.env.BASE_URL + 'icons/MySQL-Dark.svg',
+    iconLight: import.meta.env.BASE_URL + 'icons/MySQL-Light.svg'
   },
   { 
     name: 'MongoDB',
-    iconDark: '/icons/MongoDB.svg',
-    iconLight: '/icons/MongoDB.svg'
+    iconDark: import.meta.env.BASE_URL + 'icons/MongoDB.svg',
+    iconLight: import.meta.env.BASE_URL + 'icons/MongoDB.svg'
   },
   { 
     name: 'Tailwind',
-    iconDark: '/icons/TailwindCSS-Dark.svg',
-    iconLight: '/icons/TailwindCSS-Light.svg'
+    iconDark: import.meta.env.BASE_URL + 'icons/TailwindCSS-Dark.svg',
+    iconLight: import.meta.env.BASE_URL + 'icons/TailwindCSS-Light.svg'
   },
   { 
     name: 'Notion',
-    iconDark: '/icons/Notion-Dark.svg',
-    iconLight: '/icons/Notion-Light.svg'
+    iconDark: import.meta.env.BASE_URL + 'icons/Notion-Dark.svg',
+    iconLight: import.meta.env.BASE_URL + 'icons/Notion-Light.svg'
   }
 ]
 
