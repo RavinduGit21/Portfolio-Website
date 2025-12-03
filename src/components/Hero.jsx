@@ -72,7 +72,7 @@ export default function Hero() {
         {/* Social Links */}
         <div className="flex gap-3 mb-6">
           <a
-            href="https://linkedin.com/in/yourprofile"
+            href="https://www.linkedin.com/in/ravindu-shehara-9349132ba/"
             target="_blank"
             rel="noopener noreferrer"
             className="w-10 h-10 rounded-lg glass-card flex items-center justify-center hover-lift border border-gray-200"
@@ -84,7 +84,7 @@ export default function Hero() {
             </svg>
           </a>
           <a
-            href="https://github.com/yourusername"
+            href="https://github.com/RavinduGit21"
             target="_blank"
             rel="noopener noreferrer"
             className="w-10 h-10 rounded-lg glass-card flex items-center justify-center hover-lift border border-gray-200"
@@ -96,7 +96,7 @@ export default function Hero() {
             </svg>
           </a>
           <a
-            href="https://facebook.com/yourprofile"
+            href="https://www.facebook.com/ravindu.shehara.96/"
             target="_blank"
             rel="noopener noreferrer"
             className="w-10 h-10 rounded-lg glass-card flex items-center justify-center hover-lift border border-gray-200"
