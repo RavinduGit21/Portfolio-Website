@@ -1,17 +1,6 @@
 import React from 'react'
 import { useScrollAnimation } from '../hooks/useScrollAnimation'
 
-const techStack = [
-  { name: 'Node.js', icon: '🟢' },
-  { name: '.NET', icon: '🔵' },
-  { name: 'React', icon: '⚛️' },
-  { name: 'MySQL', icon: '🐬' },
-  { name: 'MongoDB', icon: '🍃' },
-  { name: 'Tailwind', icon: '🎨' },
-  { name: 'Docker', icon: '🐳' },
-  { name: 'Redis', icon: '🔴' }
-]
-
 export default function Resume(){
   const [ref, isVisible] = useScrollAnimation(0.1)
 
@@ -123,26 +112,6 @@ export default function Resume(){
               </ul>
             </div>
           </div>
-        </div>
-      </div>
-
-      {/* Tech Stack */}
-      <div className={`glass-card p-8 rounded-2xl ${isVisible ? 'animate-fade-in-up' : 'opacity-0'}`} style={{ animationDelay: '0.4s' }}>
-        <h3 className="font-semibold text-2xl mb-6 text-center bg-gradient-to-r from-accent-light to-white bg-clip-text text-transparent">
-          Favourite Tools & Technologies
-        </h3>
-        <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-4">
-          {techStack.map((tech, i) => (
-            <div 
-              key={i} 
-              className="glass-card p-4 rounded-xl text-center hover-lift group"
-            >
-              <div className="text-3xl mb-2 group-hover:scale-110 transition-transform">
-                {tech.icon}
-              </div>
-              <div className="text-xs text-gray-400">{tech.name}</div>
-            </div>
-          ))}
         </div>
       </div>
     </div>
