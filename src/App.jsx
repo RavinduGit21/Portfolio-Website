@@ -1,10 +1,9 @@
 import React from 'react'
 import Nav from './components/Nav'
 import Hero from './components/Hero'
-import Portfolio from './components/Portfolio'
-import MobileApps from './components/MobileApps'
-import Tools from './components/Tools'
-import About from './components/About'
+import Portfolio from './components/Portfolio';
+import MobileApps from './components/MobileApps';
+import About from './components/About';
 import Resume from './components/Resume'
 import Contact from './components/Contact'
 import SmoothScroll from './components/SmoothScroll'
@@ -27,10 +26,6 @@ export default function App() {
 
         <section id="mobile-apps" className="min-h-screen flex items-center py-20">
           <MobileApps />
-        </section>
-
-        <section id="tools" className="py-20">
-          <Tools />
         </section>
 
         <section id="about" className="min-h-screen flex items-center py-20">
