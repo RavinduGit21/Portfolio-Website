@@ -72,17 +72,18 @@ export default function Hero() {
         {/* Social Links */}
         <div className="flex gap-3 mb-6">
           {[
-            { icon: '🌐', label: 'GitHub' },
-            { icon: '💼', label: 'LinkedIn' },
-            { icon: '📷', label: 'Instagram' },
-            { icon: '📺', label: 'YouTube' },
-            { icon: '☁️', label: 'Cloud' }
+            { icon: '💼', label: 'LinkedIn', url: '#' },
+            { icon: '🐙', label: 'GitHub', url: '#' },
+            { icon: '📧', label: 'Email', url: '#' },
+            { icon: '💬', label: 'WhatsApp', url: '#' },
+            { icon: '🔗', label: 'Portfolio', url: '#' }
           ].map((social, i) => (
             <a
               key={i}
-              href="#"
+              href={social.url}
               className="w-10 h-10 rounded-lg glass-card flex items-center justify-center hover-lift text-lg border border-gray-200"
               aria-label={social.label}
+              title={social.label}
             >
               {social.icon}
             </a>
