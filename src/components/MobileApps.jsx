@@ -7,7 +7,7 @@ const mobileApps = [
     title: 'LankaReads',
     description: 'Modern Android app for the Sri Lankan reading community with beautiful Glassmorphism UI. Browse, add, and organize books with ISBN tracking.',
     tech: 'Kotlin, Jetpack Compose, Room Database, MVVM, Material3',
-    videoUrl: '/projects/Apps/LankaReads.mp4',
+    videoUrl: '/videos/LankaReads.mp4',
     features: [
       'Glassmorphism Design UI',
       'Book Library Management',
@@ -20,7 +20,7 @@ const mobileApps = [
     title: 'Split Smart',
     description: 'Smart expense splitting app built with Kotlin and Jetpack Compose. Track shared expenses, split bills easily, and manage group payments.',
     tech: 'Kotlin, Jetpack Compose, Room Database, Material3',
-    videoUrl: '/projects/Apps/Split-Smart.mp4',
+    videoUrl: '/videos/Split-Smart.mp4',
     features: [
       'Smart expense tracking',
       'Group bill splitting',
