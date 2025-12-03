@@ -30,38 +30,38 @@ export default function Portfolio(){
 
   return (
     <div className="w-full" ref={ref}>
-      <div className={`text-center mb-12 ${isVisible ? 'animate-fade-in-up' : 'opacity-0'}`}>
-        <h2 className="text-4xl md:text-5xl font-bold mb-4 theme-text">
+      <div className={`text-center mb-16 ${isVisible ? 'animate-fade-in-up' : 'opacity-0'}`}>
+        <h2 className="text-5xl md:text-6xl font-bold mb-6 theme-text">
           Featured Projects
         </h2>
-        <p className="theme-text-muted max-w-2xl mx-auto">
+        <p className="theme-text-muted max-w-3xl mx-auto text-lg">
           A showcase of my recent work in backend development, API architecture, and full-stack applications
         </p>
       </div>
       
-      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid lg:grid-cols-2 gap-8">
         {projects.map((p,i)=> (
           <article 
             key={i} 
-            className={`glass-card rounded-2xl overflow-hidden hover-lift group ${isVisible ? 'animate-fade-in-up' : 'opacity-0'}`}
-            style={{ animationDelay: isVisible ? `${i * 0.1}s` : '0s' }}
+            className={`glass-card rounded-3xl overflow-hidden hover-lift group ${isVisible ? 'animate-fade-in-up' : 'opacity-0'}`}
+            style={{ animationDelay: isVisible ? `${i * 0.15}s` : '0s' }}
           >
-            <div className="relative overflow-hidden h-48">
+            <div className="relative overflow-hidden h-80">
               <img 
                 src={p.img} 
                 alt={p.title} 
-                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent" />
             </div>
-            <div className="p-5">
-              <h3 className="font-semibold text-xl mb-2 theme-text">
+            <div className="p-8">
+              <h3 className="font-bold text-3xl mb-3 theme-text">
                 {p.title}
               </h3>
-              <p className="text-sm theme-text-muted mb-3">{p.desc}</p>
-              <div className="flex flex-wrap gap-2 mb-4">
+              <p className="text-base theme-text-muted mb-5 leading-relaxed">{p.desc}</p>
+              <div className="flex flex-wrap gap-2 mb-6">
                 {p.tech.split(', ').map((tech, idx) => (
-                  <span key={idx} className="text-xs px-3 py-1 rounded-full bg-accent/10 text-accent border border-accent/20">
+                  <span key={idx} className="text-sm px-4 py-2 rounded-full bg-accent/10 text-accent-light border border-accent/30 font-medium">
                     {tech}
                   </span>
                 ))}
@@ -71,10 +71,10 @@ export default function Portfolio(){
                   href={p.link} 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 text-sm font-medium text-accent hover:text-accent-light transition-colors"
+                  className="inline-flex items-center gap-2 text-base font-semibold text-accent hover:text-accent-light transition-colors group/link"
                 >
                   View Project
-                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-5 h-5 group-hover/link:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                   </svg>
                 </a>
