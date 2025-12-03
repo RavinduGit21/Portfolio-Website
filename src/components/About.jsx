@@ -59,15 +59,15 @@ export default function About(){
             </div>
             <div className="flex items-center gap-3">
               <span className="text-accent-light">📞</span>
-              <span><strong className="text-white">Phone:</strong> +94 77 000 0000</span>
+              <span><strong className="text-white">Phone:</strong> +94 71 451 6364</span>
             </div>
             <div className="flex items-center gap-3">
               <span className="text-accent-light">✉️</span>
-              <span><strong className="text-white">Email:</strong> ravindu@example.com</span>
+              <span><strong className="text-white">Email:</strong> ravindushehara1234@gmail.com</span>
             </div>
             <div className="flex items-center gap-3">
               <span className="text-accent-light">📍</span>
-              <span><strong className="text-white">Location:</strong> Sri Lanka</span>
+              <span><strong className="text-white">Location:</strong> Gampaha</span>
             </div>
           </div>
         </div>
