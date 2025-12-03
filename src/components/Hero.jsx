@@ -131,13 +131,12 @@ export default function Hero() {
         </div>
 
         {/* CTA Button */}
-        <a
+        <button
           onClick={(e) => smoothScroll(e, 'contact')}
-          href="#contact"
           className="w-full py-3 rounded-full bg-gradient-to-r from-accent to-accent-light text-white font-medium text-center block hover:shadow-lg hover:shadow-accent/30 transition-all cursor-pointer"
         >
           Let's Work Together!
-        </a>
+        </button>
       </div>
 
       {/* Right Content - Main Hero */}
