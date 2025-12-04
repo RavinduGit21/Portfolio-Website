@@ -1,3 +1,4 @@
+# Deploy to ServerByt via FTP
 name: Deploy to ServerByt
 
 on:
