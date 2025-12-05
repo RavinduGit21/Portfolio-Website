@@ -11,8 +11,7 @@ export default function Contact(){
 
   function submit(e){
     e.preventDefault()
-    const mailto = `mailto:ravindu@example.com?subject=${encodeURIComponent(form.subject)}&body=${encodeURIComponent(form.message + '\n\nFrom: ' + form.name + ' <' + form.email + '>')}`
-    window.location.href = mailto
+    // Form will be submitted to FormSubmit
   }
 
   return (
@@ -27,7 +26,7 @@ export default function Contact(){
       </div>
       
       <div className="grid md:grid-cols-2 gap-10">
-        <form onSubmit={submit} className={`space-y-6 ${isVisible ? 'animate-fade-in-up' : 'opacity-0'}`} style={{ animationDelay: '0.2s' }}>
+        <form action="https://formsubmit.co/contact@ravindushehara.me" method="POST" onSubmit={submit} className={`space-y-6 ${isVisible ? 'animate-fade-in-up' : 'opacity-0'}`} style={{ animationDelay: '0.2s' }}>
           <div>
             <input 
               name="name" 
@@ -87,8 +86,8 @@ export default function Contact(){
               </div>
               <div>
                 <div className="text-base theme-text-muted mb-2">Email</div>
-                <a href="mailto:ravindu@example.com" className="theme-text hover:text-accent-light transition-colors text-lg font-medium">
-                  ravindu@example.com
+                <a href="mailto:contact@ravindushehara.me" className="theme-text hover:text-accent-light transition-colors text-lg font-medium">
+                  contact@ravindushehara.me
                 </a>
               </div>
             </div>
